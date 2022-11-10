@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        table,
+        th {
+            border: 1px solid black;
+        }
+
+        button {
+            color: wheat;
+            background-color: green;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <button onclick="showForm()">Start</button>
+    <form id="stockExachangeForm" name="stockExachangeForm" style="display: none;" onsubmit="formSubmitted();">
+        <div>
+            <label>Which company would you like to buy shares from?</label>
+            <select>
+                <option value="0">Chase Company</option>
+                <option value="1">Fidelity</option>
+                <option value="2">Doucher Bank</option>
+            </select>
+        </div>
+        <div>
+            <label>How many Shares?</label>
+            <input type="number" placeholder="Number of shares" required />
+        </div>
+        <div>
+            <label>How much do you want to deposit</label>
+            <input type="number" placeholder="Dollar Amount" required />
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
